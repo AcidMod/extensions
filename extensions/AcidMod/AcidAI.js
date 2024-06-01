@@ -1,3 +1,9 @@
+// Name: AcidAI
+// ID: gemini
+// Description: AcidAI extension, powered by Google Gemini
+// By: AcidMod <https://github.com/AcidMod>
+// Original: RubyTeam
+// License: MPL-2.0
 class GeminiExtension {
   constructor() {
     this.apiKey = '';
@@ -27,11 +33,11 @@ class GeminiExtension {
         {
           opcode: 'requestGemini',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'Request Gemini [TEXT]',
+          text: 'Request AI [TEXT]',
           arguments: {
             TEXT: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'Write a story about a magic backpack'
+              defaultValue: 'Write a story about an ice cream cone melting into a sad stick of acid.'
             }
           }
         },
@@ -42,11 +48,11 @@ class GeminiExtension {
         {
            opcode: 'requestGeminiFromProxy',
            blockType: Scratch.BlockType.REPORTER,
-           text: 'Request Gemini [TEXT] from our reverse proxy',
+           text: 'Request AI [TEXT] from RubyTeam reverse proxy',
            arguments: {
             TEXT: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'Write a story about a magic backpack'
+              defaultValue: 'Write a story about an ice cream cone melting into a sad stick of acid.'
             }
           }
         },
@@ -57,7 +63,7 @@ class GeminiExtension {
         {
           opcode: 'requestGeminiJSON',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'Request Gemini using JSON [JSON]',
+          text: 'Request AI using JSON [JSON]',
           arguments: {
             JSON: {
               type: Scratch.ArgumentType.STRING,
@@ -68,7 +74,7 @@ class GeminiExtension {
         {
           opcode: 'requestGeminiFromModel',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'Request Gemini using JSON [JSON] from model [MODEL]',
+          text: 'Request AI using JSON [JSON] from model [MODEL]',
           arguments: {
             JSON: {
               type: Scratch.ArgumentType.STRING,
