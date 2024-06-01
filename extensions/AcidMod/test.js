@@ -1,4 +1,9 @@
-
+// Name: AcidMod Test
+// ID: acidTest
+// Description: Blocks used for testing stuff in AcidMod.
+// By: AcidMod <https://github.com/>
+// Original: AcidMod
+// License: MPL-2.0
 (async function(Scratch) {
     const variables = {};
     const blocks = [];
