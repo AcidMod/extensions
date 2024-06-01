@@ -150,12 +150,31 @@
     blocks.push({
         opcode: "everysec",
         blockType: Scratch.BlockType.EVENT,
-        text: "do every second",
+        text: "do every [secs] seconds",
         arguments: {},
         disableMonitor: true,
         isEdgeActivated: false
     });
     Extension.prototype["everysec"] = async (args, util) => {};
+
+    blocks.push({
+        opcode: "threeequals",
+        blockType: Scratch.BlockType.COMMAND,
+        text: "[str1] === [str2]",
+        arguments: {
+            "str1": {
+                type: Scratch.ArgumentType.STRING,
+            },
+            "str2": {
+                type: Scratch.ArgumentType.STRING,
+            },
+        },
+        disableMonitor: true,
+        isEdgeActivated: false
+    });
+    Extension.prototype["threeequals"] = async (args, util) => {
+        return (args["str1"] === args["str2"])
+    };
 
     setInterval(async () => {
         Scratch.vm.runtime.startHats(`${Extension.prototype.getInfo().id}_everysec`)
