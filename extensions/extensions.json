@@ -1,6 +1,7 @@
 [
   // This file supports comments
   "AcidMod/test",
+  "AcidMod/AcidAI",
   "lab/text",
   "stretch",
   "gamepad",
