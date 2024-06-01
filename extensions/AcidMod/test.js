@@ -159,7 +159,7 @@
 
     blocks.push({
         opcode: "threeequals",
-        blockType: Scratch.BlockType.COMMAND,
+        blockType: Scratch.BlockType.BOOLEAN,
         text: "[str1] === [str2]",
         arguments: {
             "str1": {
